@@ -431,6 +431,37 @@
         display: block;
     }
 }
+@keyframes animat{
+    0% {
+        bottom: 0px;
+    }
+    50% {
+        bottom: 10px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+.elm-scroll {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 10;
+    &:hover {
+        color: #fff;
+    }
+    img {
+        display: block;
+        margin: 0 auto 5px auto;
+        width: 18px;
+        animation: animat ease-in-out 1s infinite;
+        position: relative;
+    }
+}
 @media (max-width: 1023px) {
     .item-tile-total {
         &.tile-row {
